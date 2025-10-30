@@ -1,0 +1,87 @@
+name: cryptocurrency
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8 # Bộ icon
+  google_fonts: ^6.3.0 # Bộ font của google
+  nb_utils: ^7.0.7 # Bộ widgets + methods
+
+  #Firebase
+  firebase_core: ^4.2.0 # Plugin Firebase cho kết nối nhiều với ứng dụng của Firebase
+  firebase_analytics: ^12.0.3 # Plugin Flutter cho Google Analytics cho Firebase, một giải pháp đo lường ứng dụng cung cấp thông tin chi tiết về việc sử dụng ứng dụng và mức độ tương tác của người dùng trên Android và iOS.
+  firebase_crashlytics: ^5.0.3 # Plugin Flutter cho Firebase Crashlytics. Nó báo cáo các lỗi không được phát hiện cho bảng điều khiển Firebase.
+  firebase_auth: ^6.1.1 # Flutter plugin cho Firebase Auth, cho phép xác thực bằng mật khẩu, số điện thoại và các nhà cung cấp danh tính như Google, Facebook và Twitter.
+  firebase_storage: ^13.0.3 # Plugin Flutter cho Firebase Cloud Storage, một dịch vụ lưu trữ đối tượng mạnh mẽ, đơn giản và tiết kiệm chi phí dành cho Android và iOS.
+  cloud_firestore: ^6.0.3 # Plugin Flutter cho Cloud Firestore, một cơ sở dữ liệu noSQL được lưu trữ trên đám mây với tính năng đồng bộ hóa trực tiếp và hỗ trợ ngoại tuyến trên Android và iOS.
+
+  #AppAnimations and functionality
+  animated_bottom_navigation_bar: ^1.4.0 # Triển khai Widget thanh điều hướng dưới cùng hoạt hình lấy cảm hứng từ https://dribbble.com/shots/7134849-Simple-Tab-Bar-Animation
+  shimmer: ^3.0.0 # Một gói cung cấp một cách dễ dàng để thêm hiệu ứng lung linh trong dự án Flutter
+  lottie: ^3.2.0 # Hiển thị hoạt ảnh After Effects nguyên bản trên Flutter. Gói này là một triển khai Dart thuần túy của một trình phát Lottie.
+  cached_network_image: ^3.4.1 # Thư viện Flutter để tải và lưu hình ảnh mạng vào bộ nhớ đệm. Cũng có thể được sử dụng với các tiện ích giữ chỗ và lỗi.
+  number_slide_animation: ^0.2.1 # Một số sẽ được hiển thị với một hình ảnh động gọn gàng
+
+  #Ads + Signal
+  google_mobile_ads: ^6.0.0 # Plugin Flutter cho Quảng cáo trên thiết bị di động của Google, hỗ trợ quảng cáo biểu ngữ, quảng cáo xen kẽ (toàn màn hình), quảng cáo có tặng thưởng và quảng cáo gốc
+  onesignal_flutter: ^5.3.4 # OneSignal là dịch vụ thông báo đẩy miễn phí cho các ứng dụng dành cho thiết bị di động. Plugin này giúp bạn dễ dàng tích hợp ứng dụng flutter của mình với OneSignal
+  image_picker: ^1.1.2 # Plugin Flutter để chọn hình ảnh từ thư viện hình ảnh Android và iOS và chụp ảnh mới bằng máy ảnh.
+
+  #Charts
+  syncfusion_flutter_charts: ^28.2.6 # A Flutter Charts library which includes data visualization widgets such as cartesian and circular charts, to create real-time, interactive, high-performance, animated charts.
+  chart_sparkline: ^1.1.2 # Biểu đồ đường viền lấp lánh đẹp mắt cho Flutter.Đường trung bình, giá trị cao nhất và thấp nhất.
+
+  #Storage
+  sqflite: ^2.3.3 # Plugin Flutter cho SQLite, một công cụ cơ sở dữ liệu SQL khép kín, có độ tin cậy cao, được nhúng.
+
+  #API calling
+  http: ^1.2.2 # Một API có khả năng kết hợp, đa nền tảng, dựa trên tương lai cho các yêu cầu HTTP
+  flutter_html: ^3.0.0 # Một tiện ích Flutter để hiển thị HTML và CSS tĩnh dưới dạng tiện ích Flutter.
+  intl: ^0.20.2 # Chứa mã để xử lý các tin nhắn quốc tế hóa / bản địa hóa, định dạng và phân tích cú pháp ngày và số, văn bản hai chiều và các vấn đề quốc tế hóa khác.
+  flutter_linkify: ^6.0.0 # Biến URL văn bản và email thành các liên kết nội tuyến có thể nhấp vào trong văn bản cho Flutter.
+
+  #System info
+  url_launcher: ^6.3.1 # Plugin Flutter để khởi chạy URL. Hỗ trợ các chương trình web, điện thoại, SMS và email.
+  share_plus: ^10.1.2 # Trình bổ trợ Flutter để chia sẻ nội dung thông qua giao diện người dùng chia sẻ nền tảng, sử dụng ý định ACTION_SEND trên Android và UIActivityViewController trên iOS.
+
+  #State Management Technique
+  mobx: ^2.5.0 # MobX là một thư viện để quản lý trạng thái ứng dụng của bạn một cách phản ứng. Sử dụng sức mạnh của các đối tượng quan sát, hành động và phản ứng để tăng cường các ứng dụng Dart và Flutter của bạn
+  flutter_mobx: ^2.3.0 # Tích hợp Flutter cho MobX. Nó cung cấp một tập hợp các tiện ích Observer tự động xây dựng lại khi các đối tượng quan sát được theo dõi thay đổi.
+
+  #Authentication
+  google_sign_in: ^6.2.2 # Plugin Flutter cho Đăng nhập Google, một hệ thống xác thực an toàn để đăng nhập bằng tài khoản Google.
+  the_apple_sign_in: ^1.1.1 # Đăng nhập bằng Apple cho Flutter. Liên kết API gốc và triển khai Flutter của nút đăng nhập.
+  flutter_secure_storage: ^9.2.4 # Flutter Secure Storage cung cấp API để lưu trữ dữ liệu trong bộ nhớ an toàn. Keychain được sử dụng trong iOS, giải pháp dựa trên KeyStore được sử dụng trong Android.
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  build_runner: ^2.4.9 # Một hệ thống xây dựng để tạo mã Dart và biên dịch mô-đun.
+  mobx_codegen: ^2.7.4 # Trình tạo mã cho MobX bổ sung hỗ trợ chú thích mã của bạn bằng @observable, @computed @action và cũng tạo các lớp Store.
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+    - lang/
+    - assets/
+    - images/chart_images/
+    - images/app_images/
+    - images/app_images/limit.json
+    - images/social_images/
