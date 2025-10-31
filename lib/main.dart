@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:cryptocurrency/store/app_store.dart';
+
+AppStore appStore = AppStore();
 
 void main() {
   runApp(const MyApp());
